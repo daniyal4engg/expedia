@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create an account</title>
+    <link rel="icon" href="./logo.jpg" />
+    <link rel="stylesheet" href="../CSS/signUp.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      /* HEADER */
+
+      header {
+        border: 1px solid rgb(209, 208, 208);
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding: 1%;
+      }
+      .mainLogo {
+        height: 30px;
+        margin-left: 44%;
+      }
+      .fa-arrow-left {
+        color: #3662d8;
+        font-size: 18px;
+      }
+
+      /* BODY */
+
+      .container {
+        width: 30%;
+        height: 600px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+      }
+      #title {
+        color: #141d38;
+        font-size: 30px;
+        margin-left: 6%;
+      }
+      .signUp_form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      input {
+        width: 90%;
+        padding: 5px 10px;
+        margin: 0 auto;
+        font-size: 14px;
+        height: 50px;
+        border: 1px solid rgb(90, 90, 90);
+        border-radius: 8px;
+      }
+      .check {
+        width: 90%;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        gap: 10px;
+        font-size: 13px;
+        color: #343b53;
+      }
+      #checkbox {
+        width: 25px;
+        height: 25px;
+        margin-top: -3px;
+      }
+      #submitBtn {
+        /* background-color: darkblue; */
+        background-color: #b7c7f1;
+        color: white;
+        padding: 13px;
+        font-size: 16px;
+        font-weight: 600;
+        border: none;
+      }
+      .smallText {
+        width: 90%;
+        color: #343b53;
+        font-size: 14px;
+        margin: 0 auto;
+      }
+      .smallText a,
+      .smallText1 a {
+        color: #3662d8;
+        text-decoration: none;
+      }
+      .smallText1 {
+        text-align: center;
+        color: #343b53;
+        font-size: 13px;
+      }
+      .imgDiv {
+        margin: auto;
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .imgDiv img {
+        height: 90%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="https://www.expedia.co.in/"><i class="fas fa-arrow-left"></i></a>
+      <img class="mainLogo" src="./logo.png" alt="" />
+    </header>
+
+    <div class="container">
+      <h1 id="title">Create an account</h1>
+      <form class="signUp_form" id="myForm" onsubmit="signup(event)">
+        <input type="Email" id="email" placeholder="Email address" required />
+        <input type="text" id="firstname" placeholder="First name" required />
+        <input type="text" id="surname" placeholder="Surname" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <div class="check">
+          <input id="checkbox" type="checkbox" required />
+          <p>
+            I'd like to receive travel deals, special offers and other
+            information from Expedia via email.
+          </p>
+        </div>
+        <p class="smallText">
+          By creating an account, I agree to the Expedia
+          <a href="https://www.expedia.co.in/lp/lg-termsofuse"
+            >Terms and Conditions</a
+          >
+          ,
+          <a href="https://www.expedia.co.in/lp/lg-privacypolicy"
+            >Privacy Statement</a
+          >
+          and
+          <a
+            href="https://www.expedia.co.in/loyaltyrewards/pages/info-rewards/expediarewards/terms.htm"
+          >
+            Expedia Rewards Terms and Conditions</a
+          >
+          .
+        </p>
+        <input id="submitBtn" type="submit" value="Continue" />
+      </form>
+
+      <p class="smallText1">
+        Already have an account? <a href="./signIn.html">Sign in</a>
+      </p>
+      <p class="smallText1">or continue with</p>
+      <div class="imgDiv">
+        <img src="./apple.png" alt="" />
+        <img src="./fb.png" alt="" />
+        <img src="./google.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  function signup(e) {
+    e.preventDefault();
+
+    let myForm = document.getElementById("myForm");
+    let name = document.getElementById("name");
+    let lastname = document.getElementById("surname");
+    let em = document.getElementById("email");
+    let pass = document.getElementById("password");
+
+    let firstname = myForm.firstname.value;
+    let surname = myForm.surname.value;
+    let email = myForm.email.value;
+    let password = myForm.password.value;
+
+    if (localStorage.getItem("users") === null) {
+      localStorage.setItem("users", JSON.stringify([]));
+    }
+    if (
+      firstname.length == 0 ||
+      surname.length == 0 ||
+      email.length == 0 ||
+      password.length == 0
+    ) {
+      alert("Please fill all the details");
+    } else {
+      let user = {
+        firstname,
+        surname,
+        email,
+        password,
+      };
+
+      let arr = JSON.parse(localStorage.getItem("users"));
+
+      arr.push(user);
+
+      localStorage.setItem("users", JSON.stringify(arr));
+
+      alert("Account created successfully");
+    }
+
+    name.value = "";
+    lastname.value = "";
+    em.value = "";
+    pass.value = "";
+  }
+</script>
