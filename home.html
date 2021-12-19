@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expedia Travel: Vacations, Cheap Flights, Airline Tickets & Airfares</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+   
+   <style>
+        
+        *{
+            font-family:"Centra No2", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;    
+        }
+
+
+        .head{
+            border: 1px solid rgb(219, 213, 213);
+
+           border-left: transparent;
+           border-right: transparent;
+           border-top-color: transparent;
+            display: flex;
+        }
+        .expedia{
+            
+           
+            padding: 20px;
+            
+        }
+        .rest{
+            width: 30%;
+            height: 100%;
+           
+            display: flex;
+            justify-content: space-around; 
+           
+            padding: 20px;
+        }
+        .buttons{
+            color: rgb(74, 74, 74);
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+            border-color: transparent;
+            background-color: transparent;
+            font-size:15px ;
+        }
+        .buttons:hover{
+            color: blue;
+        }
+        #moreTravel{
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+           padding: 20px 20px;
+            font-size: 15px;
+            background-color: transparent;
+            border-color: transparent;
+            color: grey;
+            margin-left: 1%;
+        }
+        .inner{
+            width: 60%;
+            height:100%;
+            display: flex;
+        }
+        .stay{
+            border: 1px solid silver;
+            border-radius: 40px;
+            width: 85%;
+            margin: auto;
+            margin-top: 30px;
+           
+           
+        }
+        .stayButtons {
+            color: #343b53;
+            padding: 15px;
+            margin-left: 25px;
+            font-family:"Centra No2", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif ;
+            font-size: 15px;
+            border-color: transparent;
+            background-color: transparent;
+        }
+        .stayButtons:hover{
+           color: blue;
+            
+            
+        }
+        .stayHead{
+          
+          width: 50%;
+          margin: auto;
+        }
+        .border{
+            border: 1px solid silver;
+           width: 90%;
+           margin: auto;
+           
+        }
+        .input{
+            margin-top:30px ;
+           
+           
+        }
+        #first{
+            font-size: 15px;
+            margin-left: 4%;
+            padding: 18px 70px;
+            border-radius: 10px;
+        
+            
+        }
+        #second,#third{
+            font-size: 15px;
+            margin-left: 10px;
+          padding: 15px 25px ;
+          border-radius: 10px;
+        }
+        #fourth{
+            font-size: 15px;
+            margin-left: 10px;
+            padding: 15px 25px;
+            border-radius: 10px;
+        
+        }
+        .check{
+            font-size: 15px;
+            margin-left: 10px;
+        }
+        .checkbox{
+            margin-top: 30px;
+            margin-left: 5%;
+            height: 18px;
+           width: 18px;
+        }
+        .search{
+            width: 10%;
+           margin: auto;
+          
+        }
+        .searchButton{
+            padding: 12px 50px;
+            border-radius: 10px;
+            background-color: rgb(58, 58, 238);
+            color: white;
+            font-size: 15px;
+           font-family:"Centra No2", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif ;
+            margin-bottom: 12%;
+            margin-top: 9%;
+        }
+        .input1{
+            margin-top: 5%;
+        }
+        .return{
+            margin-left: 6%;
+            
+            margin-bottom: 40px;
+            
+        }
+        .rerun{
+            font-size: 15px;
+            padding: 11px 20px;
+           
+            border-radius: 10px;
+            border-color: transparent;
+            
+        }
+        .blue{
+           
+            background-color: rgb(179, 217, 230);
+            color: blue;
+        }
+        .hover{
+            background-color: transparent;
+        }
+        .hover:hover{
+            background-color: lightblue;
+            color: blue;
+        }
+        .departing{
+            margin-left: 4%;
+            margin-bottom: 4%;
+        }
+        .returnFlex{
+            display: flex;
+            justify-content: space-between;
+        }
+        .traveller{
+            margin-right: 5%;
+        }
+        .eco{
+            font-size: 15px;
+            color: blue;
+            padding: 10px 20px;
+            background-color: transparent;
+            border-color: transparent;
+        }
+        .room{
+            margin-bottom: 3%;
+        }
+
+
+        .offwhite{
+            width:85%;
+            padding: 22px;
+            border-radius: 10px;
+           
+           
+            background-color:#f8f5f4 ;
+            margin: auto;
+            margin-top: 5%;
+        }
+        h1{
+            font-size: 25px;
+            color: #141d38;
+            font-weight: 500;
+            font-family:"Centra No2", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+        div>p{
+            font-weight: 400;
+            color: #343b53;
+            font-size: 15px;
+
+        }
+        span{
+            color: blue;
+            text-decoration: underline;
+        }
+        .beach{
+            width: 85%;
+            height: 300px;
+           
+            margin: auto;
+            margin-top: 10%;
+            border-radius: 10px;
+            background-image: url(https://a.travel-assets.com/travel-assets-manager/gmvd-1482-bookearly-emea/667x320.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+           
+        }
+       
+        .scan{
+            border: 1px solid black;
+            width: 85%;
+            margin: auto;
+            margin-top: 4%;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+          
+           
+        }
+        
+       
+        .girl{
+            width: 39%;
+        }
+        .scanHead>h1{
+            font-size: 20px;
+            color: #141d38;
+            font-family:"Centra No2", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; ;
+        }
+        .scanHead>p:nth-child(2){
+            color: #343b53;
+            font-size: 15px;
+            
+        }
+        .scanHead>p:nth-child(3){
+           color: #343b53;
+           font-size: 15px;
+        }
+        .scanHead>p:nth-child(4){
+           color: #343b53;
+           font-size: 14px;
+        }
+
+        .ctycode{
+            border-radius: 10px;
+            padding: 15px 20px;
+        }
+        .scanButton{
+            border-radius: 10px;
+            padding: 15px 20px;
+            background-color: blue;
+            color: white;
+        }
+        .ad{
+            background-image: url("https://tpc.googlesyndication.com/simgad/4352085177578628377?");
+             background-repeat: no-repeat;
+             background-size: cover;
+            width: 75%;
+            height: 90px;
+           
+            margin-top: 8%;
+            margin-left: 11%;
+
+        }
+        .capadocia{
+         
+           height: 400px;
+           width: 85%;
+           margin: auto;
+           margin-top: 10%;
+           display: flex;
+       }
+       
+       .air{
+          border: 1px solid rgb(194, 189, 189);
+          border-radius: 10px;
+           height: 101%;
+           width: 58%;
+       }
+       .flex{
+          
+           height: 100%;
+           width: 38%;
+           margin-left: 5%;
+       }
+       .A{
+        border: 1px solid rgb(194, 189, 189);
+           border-radius: 10px;
+           width: 100%;
+           height: 48%;
+           
+           display: flex;
+       }
+       .B{
+           margin-left: 5%;
+       }
+       h3{
+           font-size: 18px;
+       }
+       h2{
+           font-size: 25px;
+       }
+       p{
+           font-size: 15px;
+       }
+       .C{
+           margin-top: 4%;
+
+       }
+       h2{
+           margin-left: 2%;
+       }
+       h2~p{
+        margin-left: 2%;
+       }
+       .bar{
+           margin-right: 50px;
+           margin-top: 50px;
+       }
+       
+       .para{
+           font-size: 14px;
+       }
+       .logo{
+           display: flex;
+       }
+       .logoimg{
+           margin-top: 3%;
+           margin-left: 1%;
+           margin-right: 2%;
+           
+           
+       }
+       
+
+       .footer{
+    display:flex;
+    justify-content:space-around;
+    margin-top:20px;
+
+}
+.footer>div>ul>li{
+  list-style-type: none;
+  margin-bottom: 20px;
+  color:blue;
+  font-size: 12px;
+}
+.footer>div>ul>li:first-child{
+  color:black;
+  font-weight: bold;
+
+  }
+  .footer>div>ul>li:hover{
+      /* color:red; */
+    text-decoration:underline;
+   
+  }
+  .foot{
+      
+     margin: auto;
+     margin-top: 7%;
+     margin-bottom: 8%;
+  }
+  .foot>h3{
+      text-align: center;
+  }
+  .foot>p{
+      text-align: center;
+  }
+        
+      
+       
+        
+    </style>
+</head>
+<body>
+  <div class="head">
+     
+     <div class="inner">
+         <div class="expedia">
+            <img height="30px" src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2" alt="">
+           </div>
+                <div class="hello">
+                    <select name="more travel" id="moreTravel">
+                        <option value="">More travel</option>
+                    </select>
+                </div>
+          
+              
+         </div>
+        
+         <div class="rest">
+            <button class="buttons">   <i class="fas fa-globe"></i> English</button>
+           <button class="buttons" >support</button>
+           <button class="buttons" >Trips</button>
+           <button class="buttons signUp" >Sign In</button>
+         </div>
+            
+           
+            
+            
+        
+     </div>
+     <div class="stay">
+        <div class="stayHead">
+            <button class="stayButtons" onclick="openCity('stay')">Stays</button>
+            <button class="stayButtons" onclick="openCity('flights')" >Flights</button>
+            <button class="stayButtons" onclick="openCity('Packages')" >Packages</button>
+            <button class="stayButtons" >Cars</button>
+            <button class="stayButtons" >Things to do</button>
+            
+        </div>
+        <div   class="border"></div>
+        <div class="input">
+             
+    
+            <div style="margin-top: 15px;" id="stay" class="input1">
+                <select class="goingTo" name="" id="first"> 
+                    <option value=""> Going to</option>
+                    <option  value="Mumbai">Mumbai</option>
+                    <option  value="Pune">Pune</option>
+                    <option   value="Indore">Indore</option>
+                    <option  value="Delhi">Delhi</option>
+                </select>
+               
+               <input id="second" type="text" placeholder=  "Check in"
+                       onfocus="(this.type='date')">
+                       
+               <input id="third" type="text" placeholder="Check out"
+                       onfocus="(this.type='date')">
+               <input id="fourth" type="number" placeholder="Travellers">
+        <br>
+               <input class="checkbox" type="checkbox">
+               <label class="check" for="">Add a flight</label>
+               <input class="checkbox" type="checkbox">
+               <label class="check"  for="">Add a car</label>
+            </div>
+            
+           
+        </div>
+    
+        <div id="flights" class="input1" style="display:none">
+            <div class="returnFlex">
+                <div class="return">
+                    <button class="rerun blue">Return</button>
+                    <button class="rerun hover">One-way</button>
+                    <button class="rerun hover">Multicity</button>
+                </div>
+    
+                <div class="traveller">
+                 <select name="" class="eco">
+                     <option value="">1 Traveller</option>
+                     <option value="">Adult</option>
+                     <option value="">child</option>
+                     <option value="">infant</option>
+                 </select>
+                 <select name="" class="eco">
+                     <option value=""> Business-class </option>
+                     <option value="">Economy</option>
+                     <option value="">First-class</option>
+                 </select>
+                </div>
+            </div>
+           
+                
+    
+           <div class="departing">
+            <input id="second" type="text" placeholder=  "Departing"
+            onfocus="(this.type='date')">
+            
+    <input id="third" type="text" placeholder="Returning"
+            onfocus="(this.type='date')">
+    <input id="fourth" type="text" placeholder="Leaving from">
+    <input id="fourth" type="text" placeholder="Going to">
+           </div>
+           
+           
+        </div>
+    
+        <div id="Packages" class="input1" style="display:none">
+            <div class="returnFlex">
+                <div class="return">
+                </div>
+    
+                <div class="traveller room">
+                 <select name="" class="eco">
+                     <option value="">1 Room, 2 Travellers</option>
+                     <option value="">Adult</option>
+                     <option value="">child</option>
+                     <option value="">infant</option>
+                 </select>
+                 
+                </div>
+            </div>
+           
+                
+    
+           <div class="departing">
+            <input id="second" type="text" placeholder=  "Departing"
+            onfocus="(this.type='date')">
+            
+    <input id="third" type="text" placeholder="Returning"
+            onfocus="(this.type='date')">
+    <input id="fourth" type="text" placeholder="Leaving from">
+    <input id="fourth" type="text" placeholder="Going to">
+    <br>
+    
+    <input class="checkbox" type="checkbox" >
+    <label class="check" for="">I only need accomodation for part of my trip</label> 
+           </div>
+           
+          
+        </div>
+       
+    
+        <div class="search">
+            <button class="searchButton">Search</button>
+        </div>
+    </div>    
+    <div class="offwhite">
+        <h1>Changes are coming to exedia rewards </h1>
+        <p>we are bringing some changes in January 2022. <span>learn more</span></p>
+    </div>
+    <div class="capadocia">
+        <div class="air">
+            <img height="75%" width="100%"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfYQgUuQQ1y9mRxP1KzB2dXkSVroTzVYZWfA&usqp=CAU" alt="">
+            <div class="logo">
+                <div class="logoimg">
+                    <img height="60px" src="https://tpc.googlesyndication.com/simgad/14931291218876135128?" alt="">
+                </div>
+                <div class="welcome">
+                 <h2 style="font-size: 20px; color: #343b53; margin-top: 3%;">Welcome to Arabia</h2>
+                 <p>Come on a journey you have never imagined</p>
+                </div>
+            </div>
+    </div>
+        <div class="flex">
+            <div class="A">
+               <img height="100%" width="32%" src="https://www.westend61.de/images/0000727827pw/dominican-rebublic-young-woman-in-hammock-looking-out-over-tropical-beach-HSIF000461.jpg" alt=""> 
+            <div class="B">
+                <h3>Find your next getaway</h3>
+                <p>last minute deals are availabel</p>
+            </div>
+            </div>
+            <div class="A C" >
+                <img height="100%" width="40%"
+               src="https://images.unsplash.com/photo-1610045058619-8c37e8913c55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3Vuc2V0JTIwYmVhY2h8ZW58MHx8MHx8&w=1000&q=80" alt=""> 
+               <div class="B">
+                <h3>Find the perfect holiday to look forward to.</h3>
+                <p>last minute deals are availabel</p>
+            </div>
+            </div>
+        </div>
+       
+    </div>
+
+    <div class="ad">
+        
+    </div>
+    <div class="beach">
+      
+    </div>
+    <div class="scan">
+        <div class="girl">
+            <img height="100%" width="78%" src="https://a.travel-assets.com/mad-service/header/takeover/expedia_marquee_refresh.jpg" alt="">
+        </div>
+        <div class="scanHead">
+            <h1>Plan your trip in a snap on the app</h1>
+           <p>From home or hammock, <br> organise your entire escape and explore app offers</p>
+        <p> Text yourself a download link</p>
+        <input class="ctycode" type="number" placeholder="Country code">
+        <input class="ctycode" type="number" placeholder="Phone number">
+        <button class="scanButton">Switch to app</button>
+        <p class="para">By providing your number, <br> you agree to receive a one-time automated text message with a link to get the app. <br> Standard text message rates may apply.</p>
+    </div>
+       
+        <div class="bar">
+            <img class="centre" height="90px" width="" src="https://a.travel-assets.com/mad-service/qr-code/footer_qr/27_QR_FOOTER.png" alt="">
+            <p>scan QR code</p>
+        </div>
+    </div>
+    <div class="foot">
+        <h3>Explore a world of travel with Expedia</h2>
+         <p>Discover new places and experiences</p>
+    </div>
+
+    <div class="footer">
+        <div ><img height=" 33px" src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg" alt="expediatxt"></div>
+        <div>
+            <!-- <a href="">About us</a><a href="">Job</a><a href="">List your property</a><a href="">Partenership</a> -->
+            <ul><li>company</li>
+                <li>About us</li>
+                <li>Job</li>
+                <li>List your property</li>
+                <li>Partenership</li>
+            </ul>
+           
+           
+        </div>
+        <div>
+            <ul><li>explore</li>
+                <li>India travel guide</li>
+                <li>Hotels in India</li>
+                <li>Holiday rentals in India</li>
+                <li>Domestic flights</li>
+                <li>Car hire in India</li>
+                <li>All accomodation types</li>
+                <li>Travel blog</li>
+               
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>term and policy</li>
+                <li>Privacy Statement</li>
+                <li>Terms of use</li>
+            </ul>
+        </div>
+        <div>
+            <ul><li>Help</li>
+                <li>Support</li>
+                <li>Change or cancel your booking</li>
+                <li>Refund process and timelines</li>
+                <li>Book a flight using an airline credit</li>
+                <li>International travel documents</li>
+            </ul>
+        </div>
+</div>
+<!-- footerends -->
+</body>
+</html>
+
+<script>
+    document.querySelector(".searchButton").addEventListener("click", function(){
+        window.location.href = "productpage.html"
+    })
+    document.querySelector(".signUp").addEventListener("click", function(){
+        window.location.href = "signin.html"
+    })
+
+
+    function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("input1");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(cityName).style.display = "block";
+}
+
+</script>
