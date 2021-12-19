@@ -1,0 +1,476 @@
+/* ------------------------------Header CSS Code start---------------------------- */
+* {
+  font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+body {
+  background: #f8f5f4;
+}
+.imgcommoncss {
+  width: 15px;
+  height: 15px;
+  padding-right: 5px;
+}
+
+.headerlist > li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 20px;
+  font-weight: bold;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+  background: white;
+  width: 100%;
+  color: #343b58;
+  font-size: 13px;
+  /* border:2px solid red; */
+}
+.first {
+  border-bottom: 1px solid black;
+}
+.header > div:first-child {
+  margin-top: 20px;
+}
+.headertwo {
+  background: white;
+  font-weight: bold;
+}
+.headertwo > ul > li {
+  margin-top: 0px;
+  /* border:2px solid teal; */
+  display: inline-block;
+  list-style-type: none;
+  padding: 0px 20px;
+  color: #343b58;
+}
+.headertwo > ul {
+  margin-top: 20px;
+  margin-left: 0px;
+}
+.logomove {
+  margin-left: 50px;
+}
+/* ------------------------------Header CSS Code End-------------------------- */
+
+/* ------------------------------Hotel CSS Code start---------------------------- */
+/* covid box */
+.marginauto {
+  margin: auto;
+}
+.marginleft {
+  margin-left: 60px;
+}
+#box1 {
+  /* border: red solid 1px; */
+  width: 90%;
+  margin: auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 10px;
+}
+#covid {
+  width: 90%;
+  height: 80px;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: flex;
+  background-color: #636a7e;
+  color: white;
+}
+* {
+  font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.singleflex {
+  display: flex;
+}
+.logo {
+  height: 100%;
+  width: 100px;
+}
+.box2 {
+  height: 100%;
+  width: 600px;
+}
+.box2 > p {
+  line-height: 7px;
+}
+.singleflex > p {
+  margin-right: 20px;
+  line-height: 0px;
+}
+.fa-exclamation-triangle {
+  padding: 30px;
+  color: white;
+}
+.blue {
+  color: blue;
+  margin-left: 60px;
+}
+/* Image section */
+.largeimage {
+  height: 400px;
+  width: 500px;
+  margin-right: 3px;
+}
+.fourbox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 580px;
+  height: 300px;
+  grid-gap: 3px;
+}
+
+/* Overview */
+.aerocitymainbox {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 10px;
+}
+.marriott {
+  width: 70%;
+}
+.mappingarea12 {
+  width: 30%;
+}
+.wonderfulbox {
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.poolparking {
+  margin-left: 150px;
+  margin-top: 70px;
+  line-height: 30px;
+}
+.petfrd {
+  line-height: 30px;
+}
+.vacancybet {
+  margin-top: 100px;
+  margin-left: 80px;
+  line-height: 30px;
+}
+/* Navigation bar  */
+.navigationoverview {
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  margin: auto;
+  width: 90%;
+}
+.navigationoverview li {
+  display: inline-block;
+  font-size: 15px;
+  padding: 10px;
+}
+.navigationoverview > button {
+  margin-left: 450px;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background-color: #5aa579;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+/* ------------------------------Hotel CSS Code End---------------------------- */
+
+/* ------------------------------Rooms CSS Code Start---------------------------- */
+#roommaindiv {
+  margin: auto;
+  width: 90%;
+  /* background-color: yellow; */
+}
+#submit {
+  background-color: #5aa579;
+  color: white;
+  padding: 10px 60px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+/* Room details */
+.sixroom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 100%;
+  grid-gap: 10px;
+}
+.roomdetailbox {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px;
+}
+.imgratio {
+  height: 170px;
+  width: 393px;
+  border-radius: 10px 10px 0px 0px;
+}
+.resevebutton {
+  height: 50px;
+  width: 100%;
+  text-align: right;
+}
+#reserve {
+  margin-right: 10px;
+  color: white;
+  background-color: #5aa579;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.hotelfont {
+  line-height: 27px;
+  margin-left: 15px;
+}
+.hotelfont2 {
+  line-height: 5px;
+  margin-left: 15px;
+}
+.smallfont {
+  font-size: 10px;
+  margin-left: 15px;
+  line-height: 1px;
+}
+.greenfont {
+  color: green;
+}
+.bluefont {
+  color: blue;
+  margin-top: 30px;
+}
+.topspace {
+  margin-top: 1px;
+}
+
+/* Popup CSS code */
+.paymentbox1 {
+  height: 50%;
+  width: 50%;
+  margin: auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.paynowflex {
+  display: flex;
+  justify-content: space-between;
+}
+.logoimageflex {
+  display: flex;
+}
+.paymentoption {
+  /* height: 30px; */
+  /* margin-top: 20px; */
+  padding: 20px;
+}
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.refundablebox {
+  line-height: 0px;
+  margin-left: 10px;
+}
+.hotelfont3 {
+  line-height: 5px;
+}
+.smallfont2 {
+  font-size: 10px;
+  margin-left: 30px;
+  line-height: 1px;
+}
+.paynowbutton {
+  color: white;
+  background-color: #5aa579;
+  padding: 0px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+.paynowflex > div > li {
+  margin-left: 10px;
+}
+.yourroom1 {
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+/* ------------------------------Room CSS Code End---------------------------- */
+
+/* ------------------------------Location CSS Code Start---------------------------- */
+
+/* location box */
+.locationmainbox {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 10px;
+}
+.locationmainbox1 {
+  height: 700px;
+  width: 30%;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.locationmainbox2 {
+  height: 700px;
+  width: 66%;
+  margin-top: 20px;
+}
+.bigmapbox {
+  height: 49%;
+  width: 99%;
+  border-radius: 10px;
+}
+.adressbox {
+  height: 50%;
+  width: 99%;
+}
+.bluetravelguide {
+  color: blue;
+}
+.fa-map-marker-alt {
+  margin-top: 40px;
+  size: 60px;
+}
+.fontbigstyle {
+  margin-left: 10px;
+  font-size: 25px;
+}
+.adressfont {
+  line-height: 5px;
+  margin-left: 30px;
+}
+.mapfont {
+  color: blue;
+  text-align: center;
+}
+
+/* Property box */
+.propertybox {
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 10px;
+}
+.propertybox1 {
+  height: 180px;
+  width: 100%;
+  display: flex;
+}
+.propertybox2 {
+  height: 600px;
+  width: 100%;
+  display: flex;
+}
+.smallproperty {
+  height: 100%;
+  width: 25%;
+  margin-left: 10px;
+}
+.bigproperty1 {
+  height: 100%;
+  width: 74%;
+}
+.bigproperty2 {
+  height: 100%;
+  width: 74%;
+}
+.Meridien {
+  margin-left: 30px;
+}
+.spacefontsize {
+  line-height: 10px;
+  margin-left: 30px;
+}
+
+/* ------------------------------location CSS Code End---------------------------- */
+
+/* ------------------------------Amenities CSS Code Start---------------------------- */
+
+.propertyamenities {
+  width: 90%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  margin: auto;
+  border-radius: 10px;
+}
+.propertyamenities1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+.outdoor {
+  margin-top: 30px;
+}
+.outdoor > p {
+  margin-left: 25px;
+  line-height: 10px;
+  color: #343b53;
+}
+.outdoor > h2 {
+  font-size: 30px;
+  margin-left: 20px;
+}
+.tumtm {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+/* ---------------------------Amenities CSS Code End---------------------------- */
+
+/* ---------------------------Footer CSS Code stat---------------------------- */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.footer > div > ul > li {
+  list-style-type: none;
+  margin-bottom: 20px;
+  color: blue;
+  font-size: 12px;
+}
+.footer > div > ul > li:first-child {
+  color: black;
+  font-weight: bold;
+}
+.footer > div > ul > li:hover {
+  /* color:red; */
+  text-decoration: underline;
+}
+
+/* ---------------------------Footer CSS Code End---------------------------- */
