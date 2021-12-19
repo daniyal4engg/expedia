@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Options</title>
+    <link rel="shortcut icon" href="https://github.com/daniyal4engg/expedia/blob/main/Images/logo.jpg?raw=true">
+    <style>
+        .paymentbox1{
+            height: 50%;
+            width: 50%;
+            margin: auto;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            padding: 20px;
+        }
+        .paynowflex{
+            display: flex;
+            justify-content: space-between;
+        }
+        .logoimageflex{
+            display: flex;
+        }
+        .paymentoption{
+            /* height: 30px; */
+            /* margin-top: 20px; */
+            padding: 20px;
+        }
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .refundablebox{
+            line-height: 0px;
+            margin-left: 10px;
+        }
+        .hotelfont3{
+            line-height: 5px;
+        }
+        .smallfont2{
+            font-size: 10px;
+            margin-left: 30px;
+            line-height: 1px;
+        }
+        .paynowbutton{
+            color: white;
+            background-color: blue;
+            padding: 0px 20px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .paynowflex>div>li{
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="paymentbox1">
+        <div class="paymentoption"><span class="close">&times;</span>Your payment options</div> <hr>
+        <div class="logoimageflex">
+            <div>
+                <img src="https://a.travel-assets.com/travel-assets-manager/03052020/illustration__free__cancellation__sml.svg" alt="">
+            </div>
+            <div class="refundablebox">
+                <h4>Fully refundable before 5 Jan 2022</h4>
+                <p>You can change or cancel this stay if plans change. Because flexibility matters.</p>
+            </div>
+        </div>
+        <div>
+            <div></div>
+            <div class="paynowflex">
+                <div>
+                    <h4>Pay now</h4>
+                    <li>We will process your payment in your <br> local currency</li>
+                    <li>You can use a valid Expedia coupon</li>
+                    <li>Please note that Expedia will not issue a <br> tax invoice. You will receive a commercial <br> receipt for the purpose of the transaction</li>
+                    <h4>Pay when you stay</h4>
+                    <li>You will not be charged until your stay</li>
+                    <li>Pay the property directly in their local <br> currency</li>
+                    <li>Please note that Expedia will not issue a <br> tax invoice. You will receive a commercial <br> receipt for the purpose of the <br> transaction. Upon request, a tax invoice <br> would be issued by the property</li>
+                </div>
+                <div>
+                    <h1 class="hotelfont3"> Rs. 7,500</h1>
+                <p class="smallfont2">per night</p>
+                <p class="smallfont2">Rs.8,400 total</p>
+                <p class="smallfont2">Includes taxes & fees</p>
+                    <div class="">
+                        <button class="paynowbutton"><h4>Pay Now </h4></button>
+                    </div>
+                <br> <br> <br> <br> <br>   
+                <h1 class="hotelfont3"> Rs. 7,500</h1>
+                <p class="smallfont2">per night</p>
+                <p class="smallfont2">Rs.8,400 total</p>
+                <p class="smallfont2">Includes taxes & fees</p>
+                <div class="">
+                    <button class="paynowbutton"><h4>Pay at Property </h4></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<script> 
+// Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+    document.querySelector(".paynowbutton").addEventListener("click",function(){
+        window.location.href = "payment_page.html";
+    });
+</script>
