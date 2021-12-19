@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PaymentPage</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./payment_page.css" />
+  </head>
+  <body>
+    <!-- Header section -->
+    <nav class="nav">
+      <div class="navleft">
+        <img
+          src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27"
+          alt=""
+        />
+      </div>
+      <div class="navright">
+        <i class="fas fa-user-alt"></i> <span>Sign in</span>
+      </div>
+    </nav>
+    <!-- container -->
+    <div id="Container">
+      <div class="header">
+        <h2>Review and book</h2>
+        <p>
+          <i class="fa fa-check" aria-hidden="true"></i>
+          <span>You've picked a winner! This hotel is rated 4.2/5.</span>
+        </p>
+      </div>
+      <div class="selectedplace">
+        <div id="locktab">
+          <i class="fas fa-lock"></i>
+          <a href="#">Sign in to earn 713 Expedia Rewards points</a>
+        </div>
+        <div class="personDetail">
+          <div>
+            <span>
+              <i class="fas fa-user"></i
+              ><span
+                ><b> Room 1: </b> 2 Adults 2 Twin Beds Non-smoking</span
+              ></span
+            >
+            <div class="facility">
+              <p>
+                <i class="fa fa-check" aria-hidden="true"></i>
+                <span> Free parking </span>
+                <span><i class="fa fa-check" aria-hidden="true"></i></span>
+                <span> Free WiFi</span>
+              </p>
+            </div>
+            <!-- form Section -->
+            <form action="" id="form">
+              <label for="first_name" class="label_first">First Name</label>
+              <label for="surname" class="label_second">Surname</label> <br />
+              <br />
+              <input
+                type="text"
+                name=""
+                id="firstname"
+                required
+                placeholder="(e.g. john)"
+              />
+              <br />
+
+              <input
+                type="text"
+                name=""
+                id="surname"
+                placeholder="(e.g. Smith)"
+                required
+              />
+              <br />
+              <label for="" class="mob_label">Mobile phone number</label>
+              <br />
+              <select name="" id="country" onchange="country_code()">
+                <option value="Select_Country">Select Country</option>
+                <option value="IND">ind</option>
+                <option value="US">US</option>
+                <option value="UK">UK</option>
+              </select>
+              <br />
+              <input type="tel" id="output" placeholder="Enter Phone Number" />
+              <br />
+              <input type="checkbox" id="box" /><label
+                for=""
+                class="charge_label"
+              >
+                Receive text alerts about this trip (free of charge).</label
+              >
+              <br />
+              <input type="submit" id="submit" />
+            </form>
+
+            <!-- <form action="" id="form">
+              <div class="userdetail">
+                <div class="firstname">
+                  <label for="first_name">First Name</label> <br />
+                  <input
+                    type="text"
+                    name=""
+                    id="firstname"
+                    required
+                    placeholder="(e.g. john)"
+                  />
+                </div>
+                <div class="surname">
+                  <label for="surname">Surname</label> <br />
+                  <input
+                    type="text"
+                    name=""
+                    id="surname"
+                    placeholder="(e.g. john)"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="mobile">
+                <select name="" id="country" onchange="country_code()">
+                  <option value="Select Country">Select Country</option>
+                  <option value="ind">ind</option>
+                  <option value="US">US</option>
+                  <option value="UK">UK</option>
+                </select>
+                <input
+                  type="tel"
+                  id="output"
+                  placeholder="Enter Phone Number"
+                />
+              </div>
+              <div class="check">
+                <input type="checkbox" id="box" /><label for="">
+                  Receive text alerts about this trip (free of charge).</label
+                >
+              </div>
+              <input type="submit" />
+            </form> -->
+          </div>
+        </div>
+        <!-- Place & Rating Section -->
+        <div class="place">
+          <div id="img">
+            <img
+              src="https://images.trvl-media.com/hotels/7000000/6180000/6172800/6172750/178d405d.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium"
+              alt=""
+            />
+            <div class="imgcontent">JW Marriott Hotel New Delhi Aerocity</div>
+          </div>
+          <div class="rating">
+            <p><span>4.2/5</span> Very good (143 reviews)</p>
+            <p>Guests rated this property 4.3/5 for cleanliness</p>
+            <p>
+              <span>1 Room</span>: Room, 2 Twin Beds, Non Smoking, Garden View
+            </p>
+            <p class="note">
+              Non-refundable
+              <span
+                ><i class="fas fa-info-circle" onclick="showindow()"></i
+              ></span>
+            </p>
+          </div>
+          <div class="check_in_out">
+            <p>Check-in: Wed, 29 Dec</p>
+            <p>Check-out: Thu, 30 Dec</p>
+            <p>1-night stay</p>
+          </div>
+        </div>
+      </div>
+      <div class="paymentinfo">
+        <div class="payment">
+          <div class="secureInfo">
+            <div>
+              <p></p>
+              <i class="fas fa-credit-card fa-lg"></i>
+            </div>
+
+            <div>
+              <p>
+                <i class="fa fa-check" aria-hidden="true"></i>
+                <span> We use secure transmission</span>
+              </p>
+            </div>
+            <div>
+              <p>
+                <i class="fa fa-check" aria-hidden="true"></i>
+                <span>We protect your personal information</span>
+              </p>
+            </div>
+          </div>
+          <div class="cardinfo">
+            <button class="debit">Deite/Credit Card</button>
+            <button class="netbanking">NetBanking</button>
+            <hr />
+          </div>
+          <div class="cardicon">
+            <i class="fab fa-cc-mastercard fa-lg"></i>
+            <i class="fab fa-cc-amex fa-lg"></i>
+            <i class="fab fa-cc-paypal fa-lg"></i>
+            <i class="fab fa-cc-visa fa-lg"></i>
+          </div>
+          <div>
+            <form action="" id="cardform">
+              <label for="name">Name on Card</label><br />
+              <input type="text" id="cardname" size="70" required /><br />
+              <label for="number">Debit/Credit card number</label><br />
+              <input type="text" id="cardnumber" size="30" required /><br />
+              <label for="date">Expiry date</label><br />
+              <select id="expMonth" required onchange="show_month()">
+                <option value="">--Select Month--</option>
+                <option selected value="1">Janaury</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+              </select>
+              <select id="expYear" required onchange="show_year()">
+                <option value="">--Select Year--</option>
+                <option selected value="1">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+                <option value="2031">2031</option>
+                <option value="2032">2032</option>
+              </select>
+              <br />
+              <label for="scode" class="scode">Security code</label><br />
+              <input type="text" id="scode" size="1" required />
+            </form>
+          </div>
+        </div>
+        <div class="priceDetail">
+          <div class="details">
+            <h2>Price details</h2>
+          </div>
+          <hr />
+          <div class="room_amount">
+            <h3>1 room x 1 night</h3>
+            <h3>Rs <span class="room_price">7500.00</span></h3>
+          </div>
+          <div class="tax_amount">
+            <h3>Taxes and service fees<i class="fas fa-info-circle"></i></h3>
+            <h3>Rs <span class="tax_price">3,536.11</span></h3>
+          </div>
+          <hr />
+          <div class="total_amount">
+            <h3>Total</h3>
+            <h3>Rs <span class="total_price">11,036.11</span></h3>
+          </div>
+          <hr />
+          <div class="sec2">
+            <h3>Not included in your total</h3>
+            <div class="charge">
+              <p>Mandatory charge: Collected at property.</p>
+              <p class="detailbtn">Details</p>
+            </div>
+            <a href="#">Use a coupon, credit, or promotion code</a>
+            <p>
+              Taxes and Fees due at the property are based on current exchange
+              rates, and are payable in local currency. Trip total includes GST
+              that Expedia pays to its vendors (e.g. Hotels). We retain our
+              service fee for facilitating your travel reservation. For details
+              please see our terms of use.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="manageBooking">
+        <h2>Manage your booking</h2>
+        <hr />
+        <div class="conf_email">
+          <h3>Confirmation email</h3>
+          <p>
+            Please enter the email address where you would like to receive your
+            confirmation.
+          </p>
+        </div>
+        <form action="" id="final_email">
+          <label for="" class="label1">Email address*</label> <br />
+          <input type="email" id="final_inp_email" size="60" /> <br />
+          <input type="checkbox" id="box1" /><label for="">
+            Receive text alerts about this trip (free of charge).</label
+          >
+        </form>
+      </div>
+      <div id="complete">
+        <h3>Important information about your booking</h3>
+        <div class="book_info_list">
+          <ul>
+            <li>
+              This rate is non-refundable. If you change or cancel your booking
+              you will not get a refund or credit to use for a future stay. This
+              policy will apply regardless of COVID-19, subject to any local
+              consumer laws.
+            </li>
+            <li>
+              No refunds will be issued for late check-in or early check-out.
+            </li>
+            <li>Stay extensions require a new reservation.</li>
+            <li>
+              Front desk staff will greet guests on arrival. For more details,
+              please contact the property using the information on the booking
+              confirmation.
+            </li>
+            <li>
+              To register at this property, guests who are Indian citizens must
+              provide a valid photo identity card issued by the Government of
+              India; travelers who are not citizens of India must present a
+              valid passport and visa.
+            </li>
+            <li>
+              Please note that BEX Travel Asia Pte Ltd and the hotel will not
+              issue a tax invoice. You will receive a commercial receipt for the
+              purpose of the transaction.
+            </li>
+            <li>
+              You'll be asked to pay the following charges at the property:
+            </li>
+            <ul>
+              <li>
+                Christmas Eve (24 December) Gala Dinner per adult: INR 4130
+              </li>
+              <li>
+                Christmas Eve (24 December) Gala Dinner per child: INR 4130
+                (from 6 to 12 years old)
+              </li>
+              <li>
+                New Year's Eve (31 December) Gala Dinner per adult: INR 8260
+              </li>
+              <li>
+                New Year's Eve (31 December) Gala Dinner per child: INR 8260
+                (from 6 to 12 years old)
+              </li>
+            </ul>
+            <li>
+              We have included all charges provided to us by the property.
+            </li>
+          </ul>
+        </div>
+        <p>
+          By clicking on the button below, I acknowledge that I have reviewed
+          the <a href="#"> Privacy Statement </a> and
+          <a href="#">Government Travel Advice</a>and have reviewed and accept
+          the <a href="#"> Rules & Restrictions</a> <a href="">Terms of Use </a>
+        </p>
+        <button id="booking_done" onclick="clickcomplete()">
+          Complete Booking
+        </button>
+        <div class="protection_security_info">
+          <i class="fas fa-lock"></i>
+          <p>
+            We use secure transmission and encrypted storage to protect your
+            personal information.
+          </p>
+        </div>
+        This payment will be processed in India. This does not apply when the
+        travel provider (airline/hotel/rail, etc.) processes your payment.
+      </div>
+      <footer>
+        <div>
+          <a
+            class="tell"
+            href="https://www.directword.io/survey/domain=www.expedia.co.in/locale=en_GB?&metadata=%7B%22pagename%22%3A%22page.Hotels.Checkout.Payment%22%2C%22session_cookie%22%3A%22f45df0f3d8f14cb0b23762df5e3e9de6%22%2C%22tuid%22%3A1%2C%22url%22%3A%22https%3A%2F%2Fwww.expedia.co.in%2FCheckout%2FV1%2FHotelCheckout%3Ftripid%3D43bd9be7-89f9-5d12-928f-32a7f176d89b%26c%3D91eec1d7-43d7-43a6-994c-7c3efd92aeec%26swpApplied%3Dfalse%22%7D&_cls_s=a17935c9-6ade-48b5-a7d4-cfadfa332403:1"
+            >Tell us what you think</a
+          >
+        </div>
+        <div class="footer_policy">
+          <a href="https://www.expedia.co.in/lp/lg-privacypolicy"
+            >Privacy Policy</a
+          >
+          <a href="https://www.expedia.co.in/lp/lg-termsofuse">Terms of Use</a>
+        </div>
+        <div>
+          <p>
+            © 2021 Expedia, Inc, an Expedia Group Company. / Expedia Asia
+            Holdings Mauritius / BEX
+          </p>
+          <p>Travel Asia Pte Ltd. All rights reserved.</p>
+        </div>
+        <div>
+          <img
+            src="https://images.trvl-media.com/media/content/expind/images/sg/secure.png"
+            alt=""
+          />
+          <br />
+          <img
+            src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg"
+            alt=""
+          />
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+<script src="./payment.js"></script>
