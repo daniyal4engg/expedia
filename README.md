@@ -5,7 +5,7 @@ Expedia Inc. is an online travel agency owned by Expedia Group, an American onli
 
 DESCRIPTION
 
-Built for construct week in unit3 at Masai School to showCase what we learnt till now. Implemented using Frontend. Only for educational purpose.
+Built for construct week in unit-2 at Masai School to showCase what we learnt till now. Implemented using Frontend. Only for educational purpose.
 
 Tech stack
 HTML| CSS| JAVASCIPT
