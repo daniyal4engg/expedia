@@ -7,4 +7,4 @@ Tech stack
 HTML| CSS| JAVASCIPT
 
 Deployed link
-https://vercel.com/fatima2400/expedia
+https://dazzling-pithivier-eb2792.netlify.app/
